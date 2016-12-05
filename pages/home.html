@@ -1,0 +1,33 @@
+<div class="r-content">
+	<div class="page-header">
+		<h1>Rena Chen</h1>
+	</div>
+	<p>Computer Science student at the University of Southern California.</p>
+	<p>Minor in 3D Computer Graphics and Modeling.</p>
+	<hr class="style-one">
+	<p>Hi, I like coding, drawing, and animating. Websites are fun. Please take a look around!</p>
+	<hr class="style-one">
+	<div class="button-center">
+		<div class="btn-group" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default" ng-click="showGraphics=false;">Computer Science</button>
+		  <button type="button" class="btn btn-default" ng-click="showGraphics=true;">Graphics and Modeling</button>
+	  </div>
+	</div>
+	<div ng-show="!showGraphics">
+		<h2>Computer Science</h2>
+		<p>Languages I know well: C/C++, Java, Python, JavaScript/TypeScript, PHP.</p>
+		<p>A lot of my work has been in web development, but I have also done Android and hybrid app development.</p>
+		<p>Some development tools I use are: AngularJS/Angular2 frameworks, Apache Cordova, Docker, Eclipse, Android Studio,
+		MySQL, and Git.</p>
+	</div>
+	<div ng-show="showGraphics">
+		<h2>Graphics and Modeling</h2>
+		<p>I can do CAD, 2D and 3D animation, and rigging/modeling.</p>
+		<p>Some software I use are: Autodesk Maya, Fusion360, Photoshop, Flash, and AfterEffects.</p>
+	</div>
+
+	<div class="decorative-gif">
+		<img src="./character-animation.gif">
+	</div>
+
+</div>
