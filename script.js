@@ -39,13 +39,13 @@
 	});
 
 	scotchApp.controller('aboutController', function($scope) {
-		$scope.message = 'Look! I am an about page.';
+		$scope.message = 'I am a junior at the University of Southern California studying Aerospace Engineering and Computer Engineering/Computer Science.';
 	});
 
 	scotchApp.controller('contactController', function($scope) {
-		$scope.message = 'Contact us! JK. This is just a demo.';
+		$scope.message = 'Jordi Sim|(408) 637-1386|jordisim@usc.edu';
 	});
 
 	scotchApp.controller('projectsController', function($scope) {
-		$scope.message = 'Projects';
+		$scope.message = 'Projects are great!';
 	});

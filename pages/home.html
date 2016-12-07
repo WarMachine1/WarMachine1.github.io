@@ -1,33 +1,36 @@
 <div class="r-content">
 	<div class="page-header">
-		<h1>Rena Chen</h1>
+		<h1>Jordi Sim</h1>
 	</div>
-	<p>Computer Science student at the University of Southern California.</p>
-	<p>Minor in 3D Computer Graphics and Modeling.</p>
+	<p>Aerospace Engineering and Computer Science student at the University of Southern California.</p>
 	<hr class="style-one">
-	<p>Hi, I like coding, drawing, and animating. Websites are fun. Please take a look around!</p>
+	<p>Hi, my passion lies in aerospace engineering, and my dream is to push the boundaries of human capability in flight and space travel.  I also enjoy coding, especially when it's applied in robotics.</p>
 	<hr class="style-one">
 	<div class="button-center">
 		<div class="btn-group" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default" ng-click="showGraphics=true;">Aerospace</button>
 		  <button type="button" class="btn btn-default" ng-click="showGraphics=false;">Computer Science</button>
-		  <button type="button" class="btn btn-default" ng-click="showGraphics=true;">Graphics and Modeling</button>
 	  </div>
 	</div>
-	<div ng-show="!showGraphics">
-		<h2>Computer Science</h2>
-		<p>Languages I know well: C/C++, Java, Python, JavaScript/TypeScript, PHP.</p>
-		<p>A lot of my work has been in web development, but I have also done Android and hybrid app development.</p>
-		<p>Some development tools I use are: AngularJS/Angular2 frameworks, Apache Cordova, Docker, Eclipse, Android Studio,
-		MySQL, and Git.</p>
-	</div>
 	<div ng-show="showGraphics">
-		<h2>Graphics and Modeling</h2>
-		<p>I can do CAD, 2D and 3D animation, and rigging/modeling.</p>
-		<p>Some software I use are: Autodesk Maya, Fusion360, Photoshop, Flash, and AfterEffects.</p>
+		<h2>Aerospace Engineering</h2>
+		<p>A lot of the work I've done in this area has been with design teams, namely USC Aerodesign team and USC Hyperloop</p>
+		<p>I've done a summer internship with Boeing and another one with a biomedical start-up, both times as a mechanical engineer.</p>
+		<p>I also do research on flapping wing designs within the USC engineering school.</p>
+		<p>Tools: NX (Unigraphics), Autodesk Fusion 360, Solidworks, MODO</p>
+	</div>
+	<div ng-show="!showGraphics">
+		<h2>Computer Science</h2> m
+		<p>Languages: Java, C/C++, Python</p>
+		<p>Development tools: Eclipse, MySQL, Git</p>
 	</div>
 
-	<div class="decorative-gif">
-		<img src="./character-animation.gif">
+	<div class="decorative-gif" ng-show="showGraphics">
+		<img src="./plane-animation.gif">
+	</div>
+
+	<div class="decorative-gif" ng-show="!showGraphics">
+		<img src="./coder-animation.gif">
 	</div>
 
 </div>

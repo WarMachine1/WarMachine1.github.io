@@ -3,13 +3,29 @@
 		<h1>Projects</h1>
 	</div>
 
-	<div>
+	<div class="button-center">
+		<div class="btn-group" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default" ng-click="showAero=true;">Aerospace/Mechanical</button>
+		  <button type="button" class="btn btn-default" ng-click="showAero=false;">Computer Science</button>
+	  </div>
+	</div>
+	<div ng-show="showAero">
 		<ul class="object-list">
-			<li><h3 class="media-heading"><a href="talentscool/index.html" title="talentscool homepage">Talentscool homepage - parallax</a></h3>
-				<p class="description">This is the basic structure of the website. Of course, the background, font, font color, and page content have to be customized. Links may be changed as well.</p></li>
+			<li><h3 class="media-heading"><a href="http://boeing.mediaroom.com/2015-10-01-Boeing-Selected-as-Prime-for-EPAWSS-Electronic-Warfare-Suite-Program" title="EPAWSS Reference">F-15 EPAWSS</a></h3>
+				<p class="description">I was involved with mechnaical design for the test instrumentation of the EPAWSS program.  Most my work here was done in NX (Unigraphics).</p></li>
+			<li><h3 class="media-heading"><a href="http://tamarisklabs.com/portfolio.html" title="Eyenez">Eyenez Ophthalmic Camera</a></h3>
+				<p class="description">I did the complete mechanical design for this medical device capable of capturing non-mydriatic retinal images (pictures of the back of an eye).</p></li>
+		</ul>
+	</div>
+	<div ng-show="!showAero">
+		<ul class="object-list">
+			<li><h3 class="media-heading"><a href="http://www.cypressenvirosystems.com/products/wireless-gauge-reader-2/" title="Wireless Gauge Reader">Wireless Gauge Reader</a></h3>
+				<p class="description">I wrote an automatic calibration system for installing these wireless gauge readers using computer vision to recognize the essential features of a gauge.</p></li>
 			<li><h3 class="media-heading"><a href="http://scf.usc.edu/~renachen/FroggersRevenge" title="Frogger's Revenge">Frogger's Revenge</a></h3>
 				<p class="description">A multiplayer desktop game written in Java, featuring frogs, drones, and hands.</p></li>
 		</ul>
-
 	</div>
+
+	<div>
+
 </div>
