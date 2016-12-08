@@ -16,7 +16,7 @@ h2 {
     padding: 30px;
     color: inherit;
     font-size: 18px;
-}
+}s
 
 .object-list {
     list-style-type: none;
@@ -40,6 +40,7 @@ a{
     /*height: 20px;
     border-bottom: 1px solid #333;*/
 }
+
 .footer {
     color: #eee;
     position: relative;
@@ -59,9 +60,14 @@ hr.style-one {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 .decorative-gif {
-    border: 5px solid #333;
+    /*border: 5px solid #333;*/
     margin: auto;
     height: 382px;
     width: 620px;
     overflow: hidden;
+}
+
+.parallas-window {
+	min-hieght: 400px;
+	background: transparent;
 }
